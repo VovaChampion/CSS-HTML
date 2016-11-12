@@ -1,0 +1,388 @@
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Lesson6</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+  <style>
+    /*html,
+body {
+  height:100%;
+  width:100%;
+}*/
+.conteiner {
+  position: absolute;
+  min-width: 100%;
+  /*border: 1px solid #000;*/
+  width:900px;
+  height:520px;
+  margin-top: 0px;
+  margin-left: 5px;
+  background:0;
+}
+h1 {
+ text-align:center;
+ text-transform: uppercase; 
+}
+.pricing {
+  position: relative;
+  display: inline-block;
+  white-space: normal;
+  left: -7px;
+  top: 0;
+  bottom: 0%;
+  right: 0;
+  /*position:relative;*/
+  background:white;
+  text-transform: uppercase; 
+  border: 3px solid #ff8000;
+  border-radius:5px;
+  font-size:100%;
+  font-weight:500;
+  font-family: 'Montserrat', sans-serif;
+  width:300px;
+  height:500px;
+  margin:00px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index:1;
+}
+.pricing_header {
+  position:relative;
+  font-size:140%;
+  background:#ff8000;
+  color:white;
+  text-align:center;
+  padding-bottom:25px;
+  padding-top:25px;
+}
+.pricing_descr{
+  position:relative;
+  font-size:120%;
+  background:white;
+  margin:5px 1%;
+  padding:5% 20%;
+}
+.pricing_price{
+  position:relative;
+  height:90px;
+  padding-left:25%;
+  margin-bottom:15px;
+}
+.prising_currency {
+  position:relative;
+  display: inline-block;
+  font-size:100%;
+  bottom:30px;
+}
+.prising_price_value{
+  position:relative;
+  display: inline-block;
+  top:5px;
+  font-size:400%;
+  font-weight:900;
+}
+.prising_duration{
+  position:relative;
+  display: inline-block;
+  font-size:100%;
+  font-weight:900;
+  top:10px;
+  text-transform: none;
+}
+.pricing_list {
+  position:relative;
+  margin-bottom:40px;
+  margin-top:-10px;
+  margin-left:20px;
+  margin-right:20px;
+  padding:0;
+  background:#ffe6e6;
+  text-transform: none;
+  color:#8a8a5c;
+}
+.pricing_list-item {
+  margin-top:0px;
+  padding-top:10px;
+  padding-bottom:5px;
+  border-width: 0.5px; 
+  border-style: solid; 
+  border-color: white;
+}
+li:nth-child(2n+1) {
+  background-color: #e6f7ff;
+}
+li {
+  position:relative;
+  background-color: #fff2e6;
+  /*list-style-position:inside;*/
+  padding: 10px;
+  list-style: square inside url("http://abali.ru/wp-content/uploads/2011/03/galochka-check_16x16.png");
+}
+.pricing_enroll {
+  position:relative;
+  border-radius:5px;
+  background:#ff8000;
+  margin: 00px 15px;
+  padding-left:70px;
+  padding-right:70px;
+  padding-bottom: 3%;
+  padding-top:3%;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited  {
+  color: white;
+}
+a:hover {
+    color: gray;
+}
+
+/*-------------block STANDART--------------*/
+.pricing_stand {
+  position: relative;
+  white-space: normal;
+  display: inline-block;
+  left: 0;
+  top: 15px;
+  bottom: 0;
+  right: 0;
+  background:white;
+  text-transform: uppercase; 
+  /*border: 3px solid #F0FFFF;*/
+  border-radius:5px;
+  font-size:100%;
+  font-weight:500;
+  font-family: 'Montserrat', sans-serif;
+  width:300px;
+  height:470px;
+  margin-left:10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.pricing_header_stand {
+  position:relative;
+  text-align:center;
+  font-size:140%;
+  background:#00CED1;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  color:white;
+  padding-bottom:25px;
+  padding-top:25px;
+}
+.pricing_descr_stand{
+  position:relative;
+  font-size:120%;
+  background:white;
+  text-align:center;
+  margin:5px 1%;
+  padding:5% 0%;
+}
+.pricing_price_stand{
+  position:relative;
+  height:90px;
+  padding-left:25%;
+  margin-bottom:15px;
+}
+.prising_currency_stand {
+  position:relative;
+  display: inline-block;
+  font-size:100%;
+  bottom:30px;
+}
+.prising_price_value_stand{
+  position:relative;
+  display: inline-block;
+  top:5px;
+  font-size:400%;
+  font-weight:900;
+}
+.prising_duration_stand{
+  position:relative;
+  display: inline-block;
+  font-size:100%;
+  font-weight:900;
+  top:10px;
+  text-transform: none;
+}
+.pricing_list_stand {
+  position:relative;
+  margin-bottom:40px;
+  margin-top:-10px;
+  margin-left:20px;
+  margin-right:20px;
+  padding:0;
+  background:#ffe6e6;
+  text-transform: none;
+  color:#8a8a5c;
+}
+.pricing_list-item_stand {
+  margin-top:0px;
+  padding-top:10px;
+  padding-bottom:5px;
+  border-width: 0.5px; 
+  border-style: solid; 
+  border-color: white;
+}
+.pricing_enroll_stand {
+  position:relative;
+  border-radius:5px;
+  background:#4682B4;
+  margin: 00px 15px;
+  padding-left:70px;
+  padding-right:70px;
+  padding-bottom: 3%;
+  padding-top:3%;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+/*-------------block Ultimate--------------*/
+.pricing_ultimate {
+  position: relative;
+  white-space: normal;
+  display: inline-block;
+  left: 0;
+  top: 15px;
+  bottom: 0;
+  right: 0;
+  background:white;
+  text-transform: uppercase; 
+  /*border: 3px solid #F0FFFF;*/
+  border-radius:5px;
+  font-size:100%;
+  font-weight:500;
+  font-family: 'Montserrat', sans-serif;
+  width:300px;
+  height:470px;
+  margin-left:-13px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.pricing_header_ultimate {
+  position:relative;
+  text-align:center;
+  font-size:140%;
+  background:#3CB371;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  color:white;
+  padding-bottom:25px;
+  padding-top:25px;
+}
+.pricing_descr_ultimate{
+  position:relative;
+  font-size:120%;
+  background:white;
+  text-align:center;
+  margin:5px 1%;
+  padding:5% 0%;
+}
+.pricing_price_ultimate {
+  position:relative;
+  height:90px;
+  padding-left:25%;
+  margin-bottom:15px;
+}
+.prising_currency_ultimate {
+  position:relative;
+  display: inline-block;
+  font-size:100%;
+  bottom:30px;
+}
+.prising_price_value_ultimate{
+  position:relative;
+  display: inline-block;
+  top:5px;
+  font-size:400%;
+  font-weight:900;
+}
+.prising_duration_ultimate{
+  position:relative;
+  display: inline-block;
+  font-size:100%;
+  font-weight:900;
+  top:10px;
+  text-transform: none;
+}
+.pricing_list_ultimate {
+  position:relative;
+  margin-bottom:40px;
+  margin-top:-10px;
+  margin-left:20px;
+  margin-right:20px;
+  padding:0;
+  background:#ffe6e6;
+  text-transform: none;
+  color:#8a8a5c;
+}
+.pricing_list-item_ultimate {
+  margin-top:0px;
+  padding-top:10px;
+  padding-bottom:5px;
+  border-width: 0.5px; 
+  border-style: solid; 
+  border-color: white;
+}
+.pricing_enroll_ultimate {
+  position:relative;
+  border-radius:5px;
+  background:#4682B4;
+  margin: 00px 15px;
+  padding-left:70px;
+  padding-right:70px;
+  padding-bottom: 3%;
+  padding-top:3%;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  </style>
+</head>
+</html>
+<h1>We have a very flexible offers for you to choose</h1>
+<div class="conteiner">
+    <div class="pricing_stand">
+    <div class="pricing_header_stand">Standart</div>
+    <div class="pricing_descr_stand">Icons graphics</div>
+    <div class="pricing_price_stand">
+      <span class="prising_currency_stand">$</span>
+      <span class="prising_price_value_stand">10</span>
+      <span class="prising_duration_stand">Monthly</span>
+    </div>
+      <ul class="pricing_list_stand">
+      <li class="pricing_list-item_stand">Unmetered Traffic</li>
+      <li class="pricing_list-item_stand">Unlimited Domain</li>
+      <li class="pricing_list-item_stand">Unlimited Databases</li>
+      <li class="pricing_list-item_stand">Unlimited e-Mails</li>
+      </ul>
+    <a href="#" class="pricing_enroll_stand">Enroll today</a>
+  </div>
+  <div class="pricing">
+    <div class="pricing_header">Best value</div>
+    <div class="pricing_descr">Icons graphics</div>
+    <div class="pricing_price">
+      <span class="prising_currency">$</span>
+      <span class="prising_price_value">25</span>
+      <span class="prising_duration">Monthly</span>
+    </div>
+      <ul class="pricing_list">
+      <li class="pricing_list-item">PHP, PERL, ASP, JSP</li>
+      <li class="pricing_list-item">SEMI DEDICATED</li>
+      <li class="pricing_list-item">Stagining of production</li>
+      <li class="pricing_list-item">Unlimited e-Mails</li>
+      </ul>
+    <a href="#" class="pricing_enroll">Enroll today</a>
+  </div>
+  <div class="pricing_ultimate">
+    <div class="pricing_header_ultimate">Ultimate</div>
+    <div class="pricing_descr_ultimate">Icons graphics</div>
+    <div class="pricing_price_ultimate">
+      <span class="prising_currency_ultimate">$</span>
+      <span class="prising_price_value_ultimate">35</span>
+      <span class="prising_duration_ultimate">Monthly</span>
+    </div>
+      <ul class="pricing_list_ultimate">
+      <li class="pricing_list-item_ultimate">Semi Dedicated</li>
+      <li class="pricing_list-item_ultimate">1TB Storage</li>
+      <li class="pricing_list-item_ultimate">Faster Site, Better SEO</li>
+      <li class="pricing_list-item_ultimate">Unlimited e-Mails</li>
+      </ul>
+    <a href="#" class="pricing_enroll_ultimate">Enroll today</a>
+  </div>
+</div>
