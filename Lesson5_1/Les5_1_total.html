@@ -1,0 +1,118 @@
+<html>
+<head lang="en">
+   <meta charset="UTF=8">
+   <title>Lessons 5 / Task 1 / Menu + submenu</title>
+   <link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="task1.css"/>
+<style>
+body
+{
+  text-align: left; 
+  font-weight: bolder;
+  text-transform: uppercase; 
+  font-family:Economica bold;
+  font-size:90%;
+}
+li .menu_sub-item {
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  text-transform: none; 
+  font-weight:normal;
+  font-size:100%;
+}
+ul .menu_sub-list {
+  position: absolute;
+  background:#DCDCDC;
+  padding: 0;
+}
+.menu_item {
+  display: inline-block;
+  margin:0 5px;
+}
+.menu{
+  position:center;
+  width:900px;
+  height:40px;
+  border-top: 5px solid #DCDCDC;
+  border-bottom: 5px solid #DCDCDC;
+  background: #00BFFF;  
+  margin: auto;
+  color: white;
+}
+.menu_sub-list {
+  position:absolute;
+  width:900px;
+  height:40px;
+  margin: 14px 10px 20px -45px; 
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+/* visited link */
+a:visited  {
+    color: white;
+}
+/* mouse over link */
+a:hover {
+    color: gray;
+}
+a:active {
+    color: blue;
+}
+/* variant 1 (випадаючий список)
+.menu_sub-list {
+  position:absolute;
+  color:gray;
+  background:#DCDCDC;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  display: none;
+}
+.menu_item:hover .menu_sub-list {
+    display: block;
+}*/
+/* variant 1 (випадаючий список)*/
+.menu_link:hover ~ ul {
+  display: block;
+}
+.menu_link ~ ul  {
+  display: none;
+}  
+</style>
+</head>
+<body>
+<div class="menu">
+  <ul class="menu_list">
+    <li class="menu_item">
+      <a href="#" class="menu_link">Home</a>
+     <ul class="menu_sub-list">
+        <li class="menu_sub-item"><a href="#" class="menu_sub-link">Amsterdam</a></li>
+        <li class="menu_sub-item"><a href="#" class="menu_sub-link">Bahamas</a></li>
+        <li class="menu_sub-item"><a href="#" class="menu_sub-link">Jamaica</a></li>
+        <li class="menu_sub-item"><a href="#" class="menu_sub-link">Las Vegas</a></li>
+        <li class="menu_sub-item"><a href="#" class="menu_sub-link">London</a></li>
+       <li class="menu_sub-item"><a href="#" class="menu_sub-link">Los Angeles</a></li>
+       <li class="menu_sub-item"><a href="#" class="menu_sub-link">Miami</a></li>
+       <li class="menu_sub-item"><a href="#" class="menu_sub-link">Montreal</a></li>
+       <li class="menu_sub-item"><a href="#" class="menu_sub-link">Paris</a></li>
+       <li class="menu_sub-item"><a href="#" class="menu_sub-link">Rome</a></li>
+      </ul>
+    </li>
+    <li class="menu_item"><a href="#" class="menu_link">News</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">Economics</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">Local</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">Sport</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">Culture</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">Travels</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">Living</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">Money</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">Technology</a></li>
+    <li class="menu_item"><a href="#" class="menu_link">More</a></li>
+    </ul>
+  </div>
+  
+</body>
+</html>
